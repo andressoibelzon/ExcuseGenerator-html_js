@@ -6,6 +6,5 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code heredsda
-  console.log("Hello Rigo from the console!");
+  let who = console.log("Hello Rigo from the console!");
 };
