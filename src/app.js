@@ -17,14 +17,21 @@ window.onload = function() {
     "while I was praying"
   ];
 
-  let whoRandom = who;
-  [Math.floor(Math.random() * who.length) + 1];
-  let actionRandom = who;
-  [Math.floor(Math.random() * action.length) + 1];
-  let whatRandom = who;
-  [Math.floor(Math.random() * what.length) + 1];
-  let whenRandom = who;
-  [Math.floor(Math.random() * when.length) + 1];
+  console.log("hello");
 
-  let result = w;
+  let whoRandom = who[Math.floor(Math.random() * who.length - 1) + 1];
+  let actionRandom = action[Math.floor(Math.random() * action.length - 1) + 1];
+  let whatRandom = what[Math.floor(Math.random() * what.length - 1) + 1];
+  let whenRandom = when[Math.floor(Math.random() * when.length - 1) + 1];
+
+  console.log(whoRandom);
+  console.log(actionRandom);
+  console.log(whatRandom);
+  console.log(whenRandom);
+
+  let result =
+    whoRandom + " " + actionRandom + " " + whatRandom + " " + whenRandom;
+  console.log(result);
+
+  return (document.getElementById("text").innerHTML = result);
 };
